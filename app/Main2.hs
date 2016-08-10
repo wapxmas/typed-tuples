@@ -23,7 +23,7 @@ module Main where
   instance a ~ SecondTuple => TupleVal (S a) where
     val (S v) = v
 
-  class TupleOps a b c where
+  class TupleOps (a :: * -> * -> *) b c where
     type FST a b c
     type SND a b c
     tfst :: a b c -> FST a b c
