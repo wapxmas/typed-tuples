@@ -1,5 +1,5 @@
 # typed-tuples
-Typed types sample
+Typed tuples sample
 
 ```Haskell
   tpl1 :: Int @@ String
